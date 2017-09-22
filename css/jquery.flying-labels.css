@@ -18,3 +18,25 @@ input:focus~.placeholder, textarea:focus~.placeholder{
     color: #2189FE;
     transition: all .2s;
 }
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
