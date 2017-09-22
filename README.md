@@ -12,7 +12,8 @@ After connecting a plugin and css-file of a plugin, write the following code:
   $("input").fly()
 </script>
 ```
-Done!
+![Image](https://github.com/VladFedotov/flying-labels/blob/master/examples_img/1.jpg)
+![Image](https://github.com/VladFedotov/flying-labels/blob/master/examples_img/2.jpg)
 
 # Options
 
