@@ -5,9 +5,10 @@ Imagine that you have a simple text field with a some placeholder:
 ```bush
 <input type='text' name='field' placeholder='Placeholder text'>
 ```
-After connecting a plugin, write the type:
+After connecting a plugin, write the following code:
 ```bush
 <script>
   $("input").fly()
 </script>
 ```
+Done!
