@@ -1,3 +1,9 @@
+/*
+        jQuery flying-labels plugin.
+        By Vladislav Fedotov.
+        Released at 22.09.2017 - v 1.0.0
+*/
+
 ;(function($){
     var methods = {
         show: function(e){
@@ -35,8 +41,12 @@
                     text: obj.attr('placeholder')
                 }).insertAfter(obj).fadeIn(config.animationTime);
             }
-            obj.bind("keyup.fly", methods.show);
-            obj.bind("change.fly keyup.fly keydown.fly", methods.hide);
+            obj.on("keyup.fly", methods.show);
+            obj.on("change.fly keyup.fly keydown.fly", methods.hide);
+        },
+        destroy: function(obj){
+            obj.off("keyup.fly change.fly keydown.fly");
+            $("."+config.placeholderClass+"[data-for='"+obj.attr('name')+"']").remove();
         }
     }
     var config, defaults = {
@@ -47,9 +57,10 @@
         'hideAnimation': 'zoomOut'
     };
     $.fn.fly = function(options){
-        config = $.extend(defaults, options);
+        if(options!=="destroy") config = $.extend(defaults, options);
         return this.each(function(){    
-            methods.init($(this));
+            if(options!=="destroy") methods.init($(this));
+            else methods.destroy($(this));
         });
     }
 })(jQuery);
