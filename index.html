@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flying labels plugin</title>
+    <link rel="stylesheet" href="css/jquery.flying-labels.css">
+    <style>
+        input{
+            border: none;
+            padding: 5px 5px 3px 5px;
+            
+            border: 1px solid #444;
+        }
+        textarea{
+            padding: 10px 10px 10px 10px;    
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="field" placeholder="Placeholder text" value="The text is still here">
+        <input type="password" name="field2" placeholder="Placeholder 2 text">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Simple text"></textarea>
+    </form>
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src='js/jquery.flying-labels.js'></script>
+    <script>
+        $("input,textarea").fly({fadeInTime: 100});
+    </script>
+</body>
+</html>
