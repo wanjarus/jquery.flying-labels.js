@@ -1,4 +1,5 @@
-# Flying-labels for html-forms
+# jQuery.flying-labels.js v1.0.0
+# Easy flying labels for html-forms
 The first version of a plugin, which will help you to make flying-labels on html-forms.
 # How in works? 
 This plugin works on **text-**, **password-inputs** and **textarea**'s. <br />
@@ -26,3 +27,8 @@ Duration of the animation for appearance of the label. To hide the label, half d
 Name of css-animation of appearance of the label. You can use Animate.css for this purpose.
 ## 'hideAnimation' (default: 'zoomOut') 
 Name of css-animation of hiding of the label. You still can use Animate.css
+## 'destroy'
+Method for disabling the plugin and removing the labels. Usage: 
+```
+$("input").fly('destroy')
+``` 
