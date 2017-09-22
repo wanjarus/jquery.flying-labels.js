@@ -1,0 +1,20 @@
+.it-wrapper{
+    display: inline-block;
+    position: relative;
+}
+.it-wrapper .placeholder{
+    position: absolute;
+    top: -3px;
+    font-size: 11px;
+    color: #889;
+    z-index: 5;
+    font-weight: bold;
+    display: none;
+    background: #fff;
+    padding: 0 5px;
+    line-height: 1em;
+}
+input:focus~.placeholder, textarea:focus~.placeholder{
+    color: #2189FE;
+    transition: all .2s;
+}
