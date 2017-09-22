@@ -1,6 +1,7 @@
 # jQuery.flying-labels.js v1.0.0
 # Easy flying labels for html-forms
-The first version of a plugin, which will help you to make flying-labels on html-forms.
+The first version of a plugin, which will help you to make flying-labels on html-forms.<br />
+Requires jQuery 3.0+.
 # How it works? 
 This plugin works on **text-**, **password-inputs** and **textarea**'s. <br />
 Imagine that you have a simple text field with a some placeholder:
